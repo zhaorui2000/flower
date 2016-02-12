@@ -1,0 +1,195 @@
+#content{
+    margin: 25px auto;
+    padding-bottom: 30px;
+}
+#content .left , #content .right{
+    border: 1px solid #ddd;
+}
+#content .left{
+    width: 32%;
+    float: left;
+    margin-left: 8px;
+    min-height: 682px;
+}
+#content .left .usermanage span.user_image{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+#content .left .usermanage span.user_image img{
+    width: 75%;
+    position: relative;
+    left:14%;
+    top:5%;
+}
+#content .left .usermanage span.user_do{
+    width: 60%;
+    display: inline-block;
+    vertical-align:top;
+}
+#content .left .usermanage span p:first-child{
+    padding: 20px 0 10px 0;
+}
+#content .left .usermanage span p a{
+    color:#666;
+}
+#content .left .usermanage span p.do a{
+    width: 60px;
+    height: 20px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    padding:2px 5px;
+}
+#content .left .usermanage .usermenu li{
+    border-top:1px solid #ddd;
+    padding: 10px 15px;
+}
+#content .left .usermanage .usermenu li:hover span{
+    font-weight: bold;
+}
+#content .left .usermanage .usermenu li.active span{
+    font-weight: bold;
+}
+
+
+#content .right{
+    width: 64%;
+    padding:20px 0;
+    box-sizing: border-box;
+    color:#666;
+    /*float: right;*/
+    display: inline-block;
+    margin-left: 20px;
+}
+/*个人资料*/
+#content .right  div .title{
+    padding: 10px 20px;
+    color:#666;
+}
+#content .right  div .title span{
+    margin-right: 10px;
+}
+#content .right #user_information .information ,#content .right #user_address .address{
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 13px;
+    margin: 20px 15px ;
+}
+#content .right #user_information .information div span{
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+}
+#content .right #user_information .information div span p{
+    margin-top: 10px;
+}
+#content .right #user_information .information div img{
+    width:50px ;
+}
+#content .right #user_information .information div input.w{
+    width:59%;
+    height:30px;
+}
+#content .right #user_information .information div{
+    margin-top: 20px;
+}
+#content .right #user_information .information div button{
+    height: 35px;
+    outline: none;
+    padding: 0 10px;
+}
+#content .right #user_information .information div button:first-child{
+    background: #333333;
+    border:1px solid  #333333;
+    color: #fff;
+}
+#content .right #user_information .information div button:last-child{
+    background: #fff;
+    border:1px solid  #ddd;
+    float: right;
+    margin-right: 10px;
+}
+
+/* 我的订单 */
+#content .right  #user_order .title{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+#content .right  #user_order .order{
+    min-height: 590px;
+    background: url("../img/find.png") no-repeat 50% 60%;
+}
+#content .right  #user_order .order p{
+    padding: 20px 0 10px;
+    border-bottom:1px solid #ddd ;
+}
+#content .right  #user_order .order p a{
+    border-bottom: 2px solid #0894ec;
+    color:#0894ec;
+    padding:8px 20px;
+}
+#content .right .order_list ul li{
+    padding:15px 50px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+#content .right  #user_order .order .order_list ul li div p{
+    padding: 5px;
+}
+#content .right  #user_order .order .order_list ul li div p span:last-child{
+    float: right;
+}
+#content .right .order_list ul li div{
+    display: inline-block;
+}
+#content .right .order_list ul li div:last-child{
+    width: 70%;
+    margin-left: 50px;
+}
+
+/* 优惠券 */
+#content .right #user_coupons,#content .right #user_download{
+    min-height: 622px;
+}
+#content .right #user_coupons div,#content .right #user_download div{
+    width: 94%;
+    height: 20px;
+    border: 1px solid #ddd;
+    margin:20px auto;
+}
+
+/* 下载列表 */
+#content .right #user_download div{
+    min-height: 240px;
+    background: url("../img/find.png") no-repeat 50% 60%;
+}
+
+/* 收获地址 */
+#content .right #user_address .address label{
+    display: block;
+}
+#content .right #user_address .address input,#content .right #user_address .address select{
+    width:100%;
+    height: 35px;
+    margin: 10px 0 15px;
+}
+#content .right #user_address .address select{
+    width: 100.8%;
+}
+#content .right #user_address .address .save{
+    margin-top: 15px;
+}
+#content .right #user_address .address .save button{
+    background: #111;
+    border:1px solid  #333333;
+    color: #fff;
+    height: 35px;
+}
+
+
+#user_order ,#user_coupons ,#user_address ,#user_download{
+    display: none;
+}

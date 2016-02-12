@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花语 | 登录</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div class="login">
+                <table>
+                    <tr>
+                        <td>手机/用户/邮箱</td>
+                        <td>
+                            <input type="text" name="uname" id="uname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="prompt" id="uname_test"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密码</td>
+                        <td>
+                            <input type="password" name="upwd" id="upwd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="prompt" id="upwd_test"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" class="size" id="check">
+                            <span><label for="check" >记住我（请在私人计算机上使用此功能）</label></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="login">登录</button>
+                            <button id="register">注册</button>
+                        </td>
+                        <td>
+                            <span class="prompt" id="login_reg"></span>
+                        </td>
+                    </tr>
+                </table>
+                    <p class="other">第三方账号登录: <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101202597&state=qq&scope=get_user_info%2Cadd_share%2Clist_album%2Cadd_album%2Cupload_pic%2Cadd_topic%2Cadd_one_blog%2Cadd_weibo&redirect_uri=http%3A%2F%2Fwww.qifeiye.com"
+                                                 class="iconfont icon-qq"></a></p>
+                <p class="other"><a href="#">忘记密码？点这里找回</a></p>
+            <div class="notice">
+                <p>用户注册/登录说明：</p>
+                <p>1、演示用户名：demouser；密码： demo1234</p>
+                <p>2、实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：
+                    <a href="">《用户管理中相关邮件的配置》</a></p>
+                <p>3、新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程
+                    <a href="">《如何设置用户注册后的审核方式》</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

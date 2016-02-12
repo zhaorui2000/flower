@@ -1,0 +1,118 @@
+.warn{
+    width: 82.5%;
+    height: 80px;
+    border: 1px solid red;
+    margin: 50px 0 20px 80px;
+    color: red;
+    text-align: center;
+    line-height: 80px;
+    display: none;
+}
+#order_address,#order_details{
+    display: inline-block;
+    width: 40%;
+    margin-left: 70px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+#order_address{
+    position: relative;
+    top:20px;
+}
+#order_address input{
+    width: 100%;
+    height:28px ;
+}
+#order_address p{
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+#order_details{
+    border: 3px solid #777;
+    padding:30px;
+    width: 30%;
+    position: relative;
+    top:-75px;
+}
+#order_details table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+#order_details table tr td{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#555;
+}
+#order_details table tr td:last-child{
+    text-align: right;
+}
+#order_details table thead tr td:first-child{
+    width: 75%;
+}
+#order_details table thead tr td{
+    border-bottom: 3px solid #ddd;
+}
+#order_details table tbody tr td{
+    color:#000;
+    font-weight: normal;
+    font-size: 14px;
+}
+#order_details table tfoot tr td{
+    border-top: 1px solid #ddd;
+}
+
+#order_details div{
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+    color: #777;
+}
+#order_details div p:nth-child(3){
+    margin-top: 20px;
+}
+#order_details div p.notice{
+    margin:10px 0;
+    border-bottom: 1px solid #ddd;
+    padding:0px 0 8px 5px;
+    display: none;
+}
+#order_details div p.active{
+    display: block;
+}
+#order_details div a {
+    display: block;
+    height: 40px;
+    width: 75px;
+    background:#777 ;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+}
+#order_details div a:hover{
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

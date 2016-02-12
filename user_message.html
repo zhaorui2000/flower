@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/user_message.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content" class="wrap">
+        <div class="left">
+            <div class="usermanage">
+                <span class="user_image">
+                    <img src="img/user_avatar.jpg" >
+                </span>
+                <span class="user_do">
+                    <p class="phone">13753849880</p>
+                    <p class="do">
+                        <a href="#user_information">修改密码</a>
+                        <a href="#user_information">修改手机</a>
+                        <a href="">第三方登录</a>
+                     </p>
+                </span>
+                <ul class="usermenu">
+                    <li>
+                        <a href="#user_order">
+                            <i class="iconfont icon-weibiaoti104"></i>
+                            <span>我的订单</span>
+                            <span class="rf">  >  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#user_coupons">
+                            <i class="iconfont icon-youhuiquan01"></i>
+                            <span>优惠券</span>
+                            <span class="rf">  >  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#user_download">
+                            <i class="iconfont icon-xiazai"></i>
+                            <span>我的下载</span>
+                            <span class="rf">  >  </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#user_information">
+                            <i class="iconfont icon-user"></i>
+                            <span>个人资料</span>
+                             <span class="rf">  >  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#user_address">
+                            <i class="iconfont icon-htmal5icon14"></i>
+                            <span>收货地址</span>
+                            <span class="rf">  >  </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div id="user_order">
+                <p class="title"><span class="iconfont icon-weibiaoti104"></span>我的订单</p>
+                <div class="order">
+                    <p><a href="#">全部订单</a></p>
+                    <div class="order_list">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="img/product_sm/matilian11.jpg" >
+                                </div>
+                                <div>
+                                    <p class="otitle">马蹄莲</p>
+                                    <p>订单状态：</p>
+                                    <p class="odetail">
+                                        <span>￥99</span>
+                                        <span>x</span>
+                                        <span>2</span>
+                                        <span>总价：￥</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="user_coupons">
+                <p class="title">
+                    <span class="iconfont icon-youhuiquan01"></span>优惠券
+                </p>
+                <div></div>
+            </div>
+            <div id="user_download">
+                <p class="title">
+                    <span class="iconfont icon-xiazai"></span>下载列表
+                </p>
+                <div></div>
+            </div>
+            <div id="user_information">
+                <p class="title"><span class="iconfont icon-user"></span>个人资料</p>
+                <form class="information">
+                    <div>
+                        <span>昵称</span>
+                        <input type="text" class="w" class="uname">
+                    </div>
+                    <div>
+                        <span>照片</span>
+                        <span>
+                            <img src="img/user_avatar.jpg">
+                            <p><input type="file" class="avatar"></p>
+                        </span>
+                    </div>
+                    <div>
+                        <span>姓名</span>
+                        <input type="text" class="user_name" class="w">
+                    </div>
+                    <div>
+                        <span>个人简介</span>
+                        <textarea class="sign" id="" cols="55" rows="8"></textarea>
+                    </div>
+                    <div>
+                        <span class="sex">性别</span>
+                        <input type="radio" name="sex" value="1" checked> 先生
+                        <input type="radio" name="sex" value="0"> 女士
+                    </div>
+                    <div>
+                        <span>电话号码</span>
+                        <span class="ophone">
+                            <input type="text" class="phone">
+                        </span>
+                    </div>
+                    <div >
+                        <button class="save">保存更改</button>
+                        <button>取消</button>
+                    </div>
+                </form>
+            </div>
+            <div id="user_address">
+                <p class="title">
+                    <span class="iconfont icon-htmal5icon14"></span>收获地址
+                </p>
+                <div class="address">
+                    <label for=" location">国家/地区 *</label>
+                    <select name="" id=" location">
+                        <option value="">中国</option>
+                    </select>
+                    <label for="user_name">姓名 *</label>
+                    <input type="text" placeholder=" 真实姓名" id="user_name">
+                    <label for="adress">地址 *</label>
+                    <input type="text" placeholder=" 编辑地址" id="adress">
+                    <input type="text" placeholder=" 楼层、房间号（可选）" >
+                    <label for="city">镇/市 *</label>
+                    <input type="text" placeholder=" 镇/市" id="city">
+                    <label for="pro">省 *</label>
+                    <select name="" id="pro">
+                        <option value="">选择一个选项</option>
+                        <option value="">山西省</option>
+                    </select>
+                    <label for="code">邮政编码 *</label>
+                    <input type="text" placeholder=" 邮政编码" id="code">
+                    <div class="save">
+                        <button>保存更改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/user_message.js"></script>
+</body>
+</html>

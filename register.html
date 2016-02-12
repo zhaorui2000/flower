@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花语 | 注册</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content" >
+        <div class="register">
+            <table>
+                <tr>
+                    <td>电话号码 <span class="prompt"> * </span></td>
+                    <td><input type="text" name="phone" class="phone"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="prompt phone_test"></span></td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td>短信验证码 <span class="prompt"> * </span></td>-->
+                    <!--<td>-->
+                        <!--<input type="text" class="info">-->
+                        <!--<span><button>获取</button></span>-->
+                    <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td><span class="prompt"></span></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>邮箱<span class="prompt"> * </span></td>
+                    <td><input type="text" class="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="prompt email_test"></span></td>
+                </tr>
+                <tr>
+                    <td>密码 <span class="prompt"> * </span></td>
+                    <td><input type="password" name="upwd" class="upwd"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="prompt upwd_test"></span></td>
+                </tr>
+                <tr>
+                    <td>确认密码 <span class="prompt"> * </span></td>
+                    <td><input type="password" name="cpwd" class="cpwd"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="prompt cpwd_test"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>密码强度</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <span class="progress" id="p1"></span>
+                        <span class="progress" id="p2"></span>
+                        <span class="progress" id="p3"></span>
+                        <span class="rank"></span>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="checkbox" id="agree" >
+                <label for="agree" >我同意《用户手册》和《保密条款》</label>
+                <span class="prompt ischeck"></span>
+            </div>
+            <div class="submit">
+                <input type="button" value="注册" id="register">
+                <a href="login.html" class="has">已经有帐号了？请登录</a>
+                <p class="other">第三方账号登录: <a href="" class="iconfont icon-qq"></a></p>
+            </div>
+            <div class="notice">
+                <p>用户注册/登录说明：</p>
+                <p>1、演示用户名：demouser；密码： demo1234</p>
+                <p>2、实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：
+                    <a href="">《用户管理中相关邮件的配置》</a></p>
+                <p>3、新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程
+                    <a href="">《如何设置用户注册后的审核方式》</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

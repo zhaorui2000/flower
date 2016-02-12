@@ -1,0 +1,247 @@
+
+#content{
+    background: url("../img/bg.jpg");
+}
+/*顶部标题lan*/
+#content #title{
+    height:50px ;
+    line-height: 50px;
+    border-top: 1px dotted rgb(115,115,115);
+    border-bottom: 1px dotted rgb(115,115,115);
+}
+#content #title li{
+    font-size: 14px;
+    color:#595959;
+    padding-left:10px ;
+}
+
+#content #main{
+    background-color:#fff ;
+    margin-top: 30px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+#content #main .left ,.right , .pic , .detail{
+    display: inline-block;
+    box-sizing: border-box;
+}
+/*左边商品详情*/
+#content #main .left{
+    width: 72%;
+    padding:20px;
+    position: relative;
+}
+#content #main .left .pic{
+    width:40%;
+    margin-right: 20px;
+}
+#content #main .left .pic #lg{
+    position: absolute;
+    left: 330px;
+    top:70px;
+    width: 380px;
+    height: 380px;
+    /*border:1px solid #aaa ;*/
+    text-align: center;
+    overflow: hidden;
+    z-index: 20;
+    display: none;
+    background-repeat: no-repeat ;
+}
+#content #main .left .pic .md{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(230,230,230,1    );
+}
+#content #main .left .pic #mask{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background: #ffa;
+    opacity: 0.5;
+    top: 71px;
+    left: 21px;
+    display:none;
+}
+#content #main .left .pic #superMask{
+    position: absolute;
+    width: 250px;
+    height:250px;
+    opacity: 0;
+    top: 71px;
+    left: 21px;
+    cursor: move;
+}
+#content #main .left .pic .sm{
+    padding-left: 5px;
+}
+#content #main .left .pic .sm a{
+    margin-right: 10px;
+}
+#content #main .left .pic .sm img{
+    width:60px;
+}
+#content #main .left .detail{
+    padding: 20px;
+    position: absolute;
+    top:30px;
+}
+#content #main .left .detail .main_title{
+    font-size: 20px;
+    color:rgb(12,12,12);
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+#content #main .left .detail .price{
+    font:32px tahoma;
+    width:70px;
+    padding:15px 0;
+    border-top:3px solid #dddddd ;
+}
+#content #main .left .detail .sub_title,#content #main .left .detail .live{
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
+#content #main .left .detail .live{
+    font-size: 14px;
+    text-indent: 2.5em;
+    margin-bottom: 20px;
+}
+    /*购物车*/
+#content #main .left .detail input{
+    height:40px;
+    font-size: 14px;
+    width:30px;
+}
+#content #main .left .detail input.cart{
+    background-color: #333333;
+    color:#fff;
+    border:none;
+    outline:none;
+    width:140px;
+}
+#content #main .left .detail input.cart:hover{
+    background: #000;
+    cursor:pointer  ;
+}
+#content #main .left .detail input.count{
+    outline:none;
+    height: 38px;
+    width:50px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+    /* 用户评论 */
+#content #main .left #comment_list{
+    border-top:1px solid #ddd ;
+    border-bottom:1px solid #ddd ;
+    margin-top: 40px;
+}
+#content #main .left .count {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+}
+#content #main .left .count {
+    padding: 18px 0 18px  21px;
+    color:#222;
+    width: 100px;
+    border-top:2px solid #fff;
+    transition: all 0.5s linear;
+}
+#content #main .left .count:hover{
+    border-top:2px solid #999;
+}
+#content #main .left .comment{
+    border-top: 2px solid #eee;
+    padding:5px  20px;
+}
+#content #main .left .comment li p{
+    font-size: 12px;
+    padding: 5px 0;
+    text-indent: 12px;
+}
+#content #main .left .comment li p:first-child{
+    font-weight: bold;
+    font-size: 16px;
+    text-indent: 0;
+    margin-top: 5px;
+}
+    /* 种植教程 */
+#content #main .left .plant_method img{
+    margin-top: 50px;
+    width:100%;
+}
+
+/*右边店铺信誉*/
+#content #main .right{
+    width: 27%;
+    position: absolute;
+    top:50px;
+    padding:20px 50px;
+    overflow: hidden;
+    margin-left:30px;
+}
+#content #main .right .shop_detail p{
+    width:240px;
+    height:40px;
+    line-height: 40px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+#content #main .right p.shop{
+   background: #000;
+    height:45px;
+    color:#fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#content #main .right p.shop_name{
+    font-weight: 700;
+}
+#content #main .right p.bg{
+    background-color: rgb(244,244,244);
+}
+
+    /* 相关商品 热卖商品 */
+#content #main .right #hot p.hot_sale,#content #main .right #about p.about_sale{
+    font-weight: 700;
+    font-size: 13px;
+    padding-left: 12px;
+    margin: 20px 0;
+}
+#content #main .right #hot p span,#content #main .right #about p span{
+    font-weight: 400;
+}
+#content #main .right #hot ul,#content #main .right #about ul{
+    width: 240px;
+}
+#content #main .right #hot ul li,#content #main .right #about ul li{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#content #main .right #hot ul li p,#content #main .right #about ul li p{
+    width: 100%;
+    font-size: 12px;
+    padding-top: 5px;
+}
+#content #main .right #hot ul li:hover  p.title a,#content #main .right #about ul li:hover  p.title a{
+    color:#000;
+}
+#content #main .right #hot ul li img,#content #main .right #about ul li img{
+    width: 75px;
+    height: 75px;
+}
+

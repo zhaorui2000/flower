@@ -1,0 +1,101 @@
+/* 顶部欢迎语  */
+#top-bar{
+    height:45px;
+	width:100%;
+	background:#e0e0e0;
+	font-size:12px;
+	color:#757575;
+	line-height:45px;
+}
+#top-bar span{
+	display:inline-block;
+	margin-right:40px;
+}
+#top-bar>.wrap>div {
+    display: inline-block;
+}
+/* 顶部导航栏 */
+#top-bar img{
+    width: 22px;
+    height: 22px;
+    margin-top:10px;
+    margin-right: 20px;
+}
+/* logo和主导航栏 */
+#header_main{
+	width:100%;
+	background:#ffffff url("../img/bg.jpg") repeat;
+}
+#header_main #logo{
+	text-align:center;
+	padding:15px 0;
+}
+#header_main #nav{
+	text-align:center;
+	font-size:13px;
+	padding-bottom: 10px;
+}
+#header_main #nav span{
+	display:inline-block;
+	width:150px;
+	padding:12px 0;
+}
+/*/搜索框/*/
+#search{
+	width:48%;
+	height: 170px;
+	border:3px solid rgb(170,170,170) ;
+	position:fixed ;
+	top:30%;
+	left:25%;
+	z-index: 10000;
+	display:none;
+	background: #fff;
+}
+#search input{
+	width: 90%;
+	height:40px;
+	display: block;
+	margin: 35px auto;
+	background:#eeeeee;
+	border: #eeeeee;
+}
+#search button{
+	font-size: 14px;
+	border: none;
+	width:60px;
+	height:30px ;
+	position: absolute;
+	right: 5%;
+	background: #ffffff;
+	padding: 5px 0;
+}
+#search #confirm{
+	right: 20%;
+}
+#search button:hover{
+	background: #ddd;
+}
+
+div.top{
+	position:relative;
+}
+/* 用户框 */
+#user_menu{
+	width: 100px;
+	height: 70px;
+	background: #fff;
+	padding-bottom: 15px;
+	display: none;
+	position: absolute;
+	top:45px;
+	right: -1%;
+}
+#user_menu ul li{
+	height: 25px;
+	margin-left: 10px;
+}
+#user_menu ul li a{
+	font-size: 12px;
+	color: #757575;
+}

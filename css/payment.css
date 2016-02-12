@@ -1,0 +1,34 @@
+#content .payment{
+    border-bottom:1px dashed rgb(209,209,209);
+    width:90%;
+    margin: 0 auto;
+}
+#content .payment .way{
+    padding: 60px 0;
+}
+#content .payment .way .ch{
+    font: 26px "宋体";
+    font-weight: 700;
+}
+#content .payment .way .en{
+    font: 14px "times new roman";
+    color: #a9a9a9;
+    padding: 5px 0;
+}
+#content .payment .theme{
+    font-weight: 700;
+    color: #696969;
+    font: 14px "宋体";
+    margin-bottom: 30px;
+}
+#content .payment .about{
+    font: 13px "微软雅黑";
+    color:#696969;;
+    line-height: 2em;
+}
+#content .payment  .answer{
+    margin-bottom: 30px;
+}
+#content .payment .last{
+    margin-bottom: 60px;
+}

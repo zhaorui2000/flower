@@ -1,0 +1,28 @@
+ /*样式初始化 */
+body,div,span,p,a,ul,img{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#707070;
+}
+.lf{
+	float:left;
+}
+.rf{
+	float:right;
+}
+.wrap{
+	max-width:1200px;
+	margin:0 auto;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}

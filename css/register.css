@@ -1,0 +1,102 @@
+#content{
+    width: 100%;
+    padding: 60px 0;
+    background:url("../img/login.jpg");
+}
+#content .register{
+    width: 32%;
+    margin: 0 auto;
+    border: 1px solid rgb(232,232,232);
+    border-radius: 5px;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.7);
+    position: relative;
+    top:13%;
+}
+#content .register table{
+    width:100%;
+    font-size:15px;
+    color:#000;
+}
+#content .register table td:first-child{
+    text-indent: 3em;
+}
+#content .register table td{
+    width: 50%;
+    height:30px;
+}
+#content .register table td input{
+        width:90%;
+        height:26px;
+}
+#content .register table td input.info{
+    width:65%;
+}
+#content .register table td span button{
+    height: 32px;
+    padding:0 15px;
+    border: none;
+    color:#fff;
+    background: #000;
+    position: relative;
+    top:1px;
+    left:-4px;
+}
+/* 密码强度 */
+#content .register table td span.progress{
+    display: inline-block;
+    width:50px;
+    height:5px;
+    border:1px solid #333;
+}
+#content .register div,#content .register div.submit{
+    border-top:1px solid #e5e5e5 ;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#content .register div label{
+    color: #888;
+    font-size:14px;
+}
+#content .register div a.has{
+    border: 1px solid #ddd;
+    color:#666;
+    font-size: 14px;
+    padding:5px 10px;
+    margin-left: 35%;
+    background: #fff;
+}
+#content .register div.submit input{
+    color:#fff;
+    background:#000;
+    border: none;
+    font-size:14px;
+    padding:5px 10px;
+    border-radius: 3px;
+}
+
+#content .register p.other{
+    font-size: 13px;
+    margin-top: 20px;
+    padding-left:6px ;
+}
+#content .register .other a{
+    padding-left:10px;
+}
+#content .register p.other:last-child{
+    text-align: right;
+}
+#content .register .notice{
+    padding-top:20px ;
+    border-top:1px solid #eee;
+    font-size: 13px;
+}
+#content .register .notice p{
+    line-height: 2em;
+}
+
+
+/* 提示语设置 */
+span.prompt{
+    color:red;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花语 | 购物车</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content" class="wrap">
+        <div class="cart_null">
+            <p>您的购物车目前是空的</p>
+            <p class="return"><a href="product.html">返回商店</a></p>
+        </div>
+        <div class="list">
+            <table class="cart_list">
+                <thead >
+                <th >商品</th>
+                <th >价格</th>
+                <th >数量</th>
+                <th >合计</th>
+                </thead>
+                <tbody id="list">
+                    <!--<tr>-->
+                        <!--<td class="product-remove">-->
+                            <!--<a href="#">x</a>-->
+                            <!--<img src="img/product_sm/heimeigui11.jpg">-->
+                            <!--<a href="product_detail.html" class="product-title">黑玫瑰</a>-->
+                        <!--</td>-->
+                        <!--<td class="product-price">-->
+                            <!--￥99-->
+                        <!--</td>-->
+                        <!--<td class="product-sum">-->
+                            <!--<button> - </button>-->
+                            <!--<span>1</span>-->
+                            <!--<button> + </button>-->
+                        <!--</td>-->
+                        <!--<td class="product-total">-->
+                            <!--￥198-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div class="cart">
+            <div class="cart_sum">
+                <p class="title">购物车总计</p>
+                <p class="stotal">购物车小计 <span>￥198</span></p>
+                <p class="freight">运费 <span>免费送货</span></p>
+                <p class="total">订单总价 <span>￥198</span></p>
+                <a href="account.html">前往收银台</a>
+            </div>
+            <div class="coupon">
+                <p class="title">优惠券</p>
+                <input type="text" value="" placeholder="优惠券编号">
+                <p>
+                    <a href="#"> 使用优惠券</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/shopping_cart.js"></script>
+</body>
+</html>

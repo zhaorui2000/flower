@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content" class="wrap">
+        <div class="warn">
+           带 * 的为必填项，请谨慎填写！
+        </div>
+        <div id="order_address">
+            <h3>账单地址</h3>
+            <p>收货人姓名 *： </p>
+            <input type="text" name="user_name" class="user_name">
+            <p>省份 *：</p>
+            <input type="text" name="province" class="province">
+            <p>城市 *：</p>
+            <input type="text" name="city" class="city">
+            <p>详细地址 *：</p>
+            <input type="text" name="address" class="address">
+            <p>邮政编码 *：</p>
+            <input type="email " name="email" class="email">
+            <p>收货人电话 *：</p>
+            <input type="text" name="phone" class="phone">
+            <p>订单备注</p>
+            <textarea name="" id="" cols="66" rows="4" class="remark"></textarea>
+        </div>
+        <div id="order_details">
+            <h3>订单详情</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>商品</td>
+                        <td>合计</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td>植物花艺 x <span>1</span> </td>
+                        <td>￥555</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>购物车小计</td>
+                        <td>￥555</td>
+                    </tr>
+                    <tr>
+                        <td>运费</td>
+                        <td>免费送货</td>
+                    </tr>
+                    <tr>
+                        <td>订单总计</td>
+                        <td>￥555</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div>
+                <p><input type="radio" name="1" checked >银行汇款（线下）</p>
+                <p class="notice active">直接付款到我们的银行账户。请使用订单号作为付款名目。我们会在资金到账后配送订单。</p>
+                <p><input type="radio" name="1">支付宝</p>
+                <p class="notice">使用支付宝付款，如果您没有支付宝账户，也可通过借记卡或信用卡付款。</p>
+                <a href="">下单</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>

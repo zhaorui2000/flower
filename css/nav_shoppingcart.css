@@ -1,0 +1,80 @@
+#nav-shoppingCart{
+    width: 320px;
+    height: 100%;
+    border: 1px solid #000;
+    position: fixed;
+    top:0;
+    right:-322px;
+    z-index: 10;
+    background: #fff;
+    transition: all .5s linear ;
+}
+#nav-shoppingCart #cart_title{
+    width: 100%;
+    height: 70px;
+    background: #000;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+#nav-shoppingCart #shop_list{
+    padding: 20px;
+}
+#nav-shoppingCart #shop_list li{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+#nav-shoppingCart #shop_list li div.plist{
+    display: inline-block;
+    position: relative;
+    top:-20px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+#nav-shoppingCart #shop_list li div.plist p{
+    margin-bottom: 5px;
+}
+#nav-shoppingCart #shop_list li div.plist p:first-child{
+    text-align: right;
+    width: 160%;
+}
+
+#nav-shoppingCart #shop_list div.sum p{
+    text-align: center;
+    width:88% ;
+    position: absolute;
+}
+#nav-shoppingCart #shop_list p.total{
+    font-size: 15px;
+    bottom: 120px;
+}
+#nav-shoppingCart #shop_list p.cart{
+    bottom: 70px;
+}
+#nav-shoppingCart #shop_list p.compute{
+    bottom:25px;
+}
+#nav-shoppingCart #shop_list div.sum p a{
+    /*width: 85%;*/
+    display: block;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    border: 1px solid rgb(73,73,73);
+}
+#nav-shoppingCart #shop_list p.cart a{
+    color:rgb(73,73,73);
+}
+#nav-shoppingCart #shop_list p.cart a:hover{
+    color:#000;
+    border: 1px solid #000;
+}
+#nav-shoppingCart #shop_list p.compute a{
+    background-color:rgb(73,73,73) ;
+    color:#fff;
+}
+#nav-shoppingCart #shop_list p.compute a:hover{
+    background: #000000;
+}

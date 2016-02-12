@@ -1,0 +1,392 @@
+/* 1 首页轮播图 */
+#banner{
+	position: relative;
+    height:500px;
+}
+#banner img{
+	width:100%;
+    height:100%;
+	opacity:0;
+    position: absolute;
+}
+#banner img.show{
+    opacity: 1;
+}
+    /* 左右箭头 */
+/* #banner>div.left,#banner>div.right{
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:50%;
+	background-color:rgba(0,0,0,.1);
+	font-size:24px;
+	color:#fff;
+	position: absolute;
+    top:45%;
+    left:2%;
+}
+#banner>div.right{
+    left:97%;
+} */
+    /* 图片中间字 */
+#banner>p.font{
+    font:58px "黑体";
+    letter-spacing: 50px;
+    position: absolute;
+    color:#fff;
+    top:160px;
+    left:36%;
+}
+    /* 图片上的圆 */
+/* #banner>div.circle{
+    position: absolute;
+    top:90%;
+    left:48%;
+}
+#banner div.circle span{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background: #ffffff;
+    margin-left:10px;
+    border-radius: 50%;
+} */
+/* 2 两张大图 */
+#bigPic{
+    width:100%;
+    margin-top:50px;
+}
+#bigPic>div{
+    border:1px solid #ddd;
+    display: inline-block;
+    width:49%;
+    height:auto;
+    position: relative;
+    right: -1000px;
+    transition: all 1s linear;
+
+}
+#bigPic div:first-child{
+    margin-right:10px;
+    left: -1000px;
+}
+#bigPic img{
+    box-sizing: border-box;
+    padding:6px;
+    width:100%;
+    height:auto;
+}
+
+/* 今日上新标题 */
+#new,#sales{
+    margin-top: 60px;
+	position:relative;
+    height: 520px;
+}
+.title>div{
+    display:inline-block;
+    border-bottom:2px solid #ddd;
+}
+.title .header_title{
+    color:#222222;
+    font-size: 20px;
+}
+.title .header_title,.title .subtitle{
+    position:relative;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    top:9px;
+    padding-right:5px;
+}
+.title .subtitle{
+    font:15px "Raleway";
+    color:#bababa;
+    top:10px;
+	left:-8px;
+}
+.title .more a{
+	position: absolute;
+	top:10px;
+    right: 5px;
+    color:#373a41;
+    font-size:12px;
+    border: 1px solid #a5a5a5;
+    padding:6px 8px;
+}
+.title .more a:hover{
+	background:rgba(0,0,0,.8);
+	color:#fff;
+}
+/* 今日上新商品列表 */
+#product_list,#sales_list,#decorate_list{
+	text-align:center;
+    overflow: hidden;
+}
+#product_list li{
+	width:22%;
+	height:auto;	
+	text-align:center;
+	border:1px solid #e5e5e5;
+	margin:50px 8px;
+	display:inline-block;	
+	transition:all .8s linear;
+    position: relative;
+    top:420px;
+}
+#product_list li:hover{
+	transform:translatey(-10px);
+	box-shadow:3px 5px 5px 5px rgba(20,1,0,0.1); 
+}
+#product_list li:hover img{
+    transform:scale(1.1);
+}
+#product_list li:hover .name{
+    border-bottom:1px solid rgba(229,229,229,1);
+}
+#product_list li a img{
+	margin-top:20px;
+	width:90%;
+	height:auto;
+    transition:all .5s linear;
+}
+#product_list li .name{
+	color:#999;
+	font-size:15px;
+	width:100%;
+	padding:15px 0;
+	transition:all .5s linear;
+}
+#product_list li .price{
+	padding:15px 0;
+}
+/* 限时促销 */
+#sales_list .left,#sales_list .right{
+	width:49%;
+	height:auto;
+	display:inline-block;
+    margin-top:40px;
+    position: relative;
+    transition: all 1s linear;
+}
+#sales_list .left img,#sales_list .right img{
+	width:100%;
+}
+#sales_list .right{
+    margin-left: 8px;
+    top:-28px;
+    left: 600px;
+}
+#sales_list .left{
+    left: -600px;
+}
+#sales_list .right p{
+    position: relative;
+    top:-5px;
+}
+#sales_list .left p,#sales_list .right p{
+	background:#f7f7f7;
+	text-align:center;
+	padding:20px 0;
+    border:1px solid #ddd;
+    letter-spacing: 8px;
+}
+#sales_list .left p span,#sales_list .right p span{
+    font-size:42px;
+    font-weight: 500;
+}
+/* 店铺介绍 */
+#intro{
+	width:100%;
+	margin-top:150px;
+}
+.pic img{
+	width:100%;
+    max-height:400px;
+}
+#intro div.pic{
+	width:49%;
+	display:inline-block;
+    margin-left: 8px;
+}
+#intro div.detail{
+    width:50%;
+    display:inline-block;
+    background: #f7f7f7;
+    position: relative;
+    top: -89px;
+    left: -5px;
+}
+#intro div.detail img{
+    margin-left: 50px;
+    padding: 70px 80px 0 0 ;
+}
+#intro div.detail .slogan{
+    font-size: 30px;
+    color: #3ddd0d;
+    padding: 10px;
+    letter-spacing: 5px;
+    margin-left: 250px;
+    margin-top: -70px;
+}
+.recommend{
+    margin-top:70px;
+}
+.recommend p{
+    font-size: 15px;
+    line-height: 2em;
+    padding: 2px 50px;
+    color: rgb(141, 141, 141);
+}
+.recommend p:first-child{
+    margin-top: 40px;
+}
+.recommend p:last-child{
+    padding-bottom: 80px;
+}
+
+/* 装点家园商品列表 */
+#decorate{
+    margin-top: -40px;
+    position: relative;
+}
+#decorate_list .list{
+    width: 22%;
+    height: auto;
+    display: inline-block;
+    margin-left:20px;
+    transition: all 1s linear;
+    position: relative;
+    top:550px;
+}
+#decorate .list:hover{
+    border: 1px solid #dddddd;
+    transform: scale(0.9);
+    box-shadow:-8px 10px 2px #f7f7f7;
+}
+#decorate .list:hover img{
+    transform: scale(1.1);
+}
+#decorate_list .top a img{
+    width: 90%;
+    height: 90%;
+    transition: all .5s linear;
+    text-align: center;
+}
+#decorate_list .top{
+    height:40%;
+    padding-bottom: 101px;
+}
+#decorate_list .two img{
+    position: relative;
+    top: 60px;
+}
+#decorate_list .bottom{
+    height: 60%;
+    padding-bottom:80px ;
+    margin-top: 60px;
+}
+#decorate_list .bottom .name{
+    color:#666;
+    font-size:13px;
+    margin-top: 10px;
+}
+#decorate_list .bottom .price{
+    color: #000;
+    font-size: 24px;
+    padding:20px 0 ;
+}
+/*装点家园-—品种文章部分*/
+#decorate .kinds .kinds_list,#decorate .kinds .pic_list,#decorate .kinds .picture,#decorate .kinds .article{
+    display: inline-block;
+}
+#decorate .kinds{
+    margin-top: 20px;
+}
+#decorate .kinds .kinds_list,#decorate .kinds .picture{
+    position: relative;
+    transition: all 1s linear;
+}
+#decorate .kinds .kinds_list{
+    width:60%;
+    margin-right: 10px;
+    left: -1200px;
+}
+#decorate .kinds .picture{
+    width: 38%;
+    top:7px;
+    left: 820px;
+}
+#decorate .kinds .first ,#decorate .kinds .next{
+    border:1px solid #ddd;
+}
+#decorate .kinds .first{
+    margin-bottom: 20px;
+}
+#decorate .kinds .pic_list{
+    width:36%;
+    margin-right:20px ;
+}
+#decorate .kinds .pic_list img{
+    width:100%;
+    padding:5px 8px 4px 5px;
+}
+#decorate .kinds .article{
+    width: 58%;
+    position: relative;
+    top:-25px;
+}
+#decorate .kinds .article a{
+    color: #333;
+    font-size: 16px;
+}
+#decorate .kinds .article .post_data{
+    color:#999;
+    font-size: 13px;
+    padding: 10px 0 20px 0;
+}
+#decorate .kinds .article .cont{
+    color: #777;
+    font-size: 13px;
+    line-height: 22px;
+}
+/*售后服务*/
+#serive{
+    text-align: center;
+    margin: 60px auto;
+    overflow: hidden;
+}
+#serive .serive_list {
+    width: 24%;
+    display: inline-block;
+    position: relative;
+    top:100px;
+}
+#serive .no1{
+    transition: all .5s linear;
+}
+#serive .no2{
+    transition: all .8s linear;
+}
+
+#serive .no3{
+    transition: all 1.1s linear;
+}
+#serive .no4{
+    transition: all 1.4s linear;
+}
+#serive .list{
+    display: inline-block;
+    position: relative;
+    top:-18px;
+    text-align: left;
+}
+#serive .list .main_title{
+    color: #494949;
+    font-size: 16px;
+}
+#serive .list .sub_title{
+    color: #bababa;
+    font-size: 12px;
+    padding: 5px 0;
+}
